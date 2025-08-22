@@ -73,3 +73,6 @@ npm start               # 本地开发
 ## 许可
 
 MIT
+
+# 截图
+<img width="1702" height="598" alt="image" src="https://github.com/user-attachments/assets/660bc2e4-a582-45ab-b8e1-1f579a55a3c4" />
