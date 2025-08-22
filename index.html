@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2D 平台动作游戏（Mario-like）</title>
+    <style>
+      html, body { margin: 0; background: #0e0f14; color: #dbe4ee; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+      #ui { position: fixed; left: 12px; top: 12px; background: rgba(0,0,0,.35); padding: 8px 10px; border-radius: 8px; }
+      #ui code { background: rgba(255,255,255,.08); padding: 0 4px; border-radius: 4px; }
+      #hud { position: fixed; right: 12px; top: 12px; background: rgba(0,0,0,.35); padding: 8px 10px; border-radius: 8px; min-width: 150px; text-align: right; }
+      canvas { display:block; image-rendering: pixelated; }
+      .footer { position: fixed; left: 50%; transform: translateX(-50%); bottom: 10px; opacity: .6; font-size: 12px; }
+      a { color: #8bd3ff; }
+    </style>
+  </head>
+  <body>
+    <div id="ui">
+      操作：<code>A/D</code> 左右，<code>J</code> 跳跃，<code>K</code> 冲刺，<code>R</code> 重置。
+    </div>
+    <div id="hud">金币：<span id="coins">0</span>　时间：<span id="time">0.0</span>s</div>
+    <canvas id="game" width="960" height="540"></canvas>
+    <div class="footer">Demo 项目。关卡 1：到达旗帜处通关。</div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
